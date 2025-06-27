@@ -8,16 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var useRedText = false
-    
-    // using terniary operator for this instead of making and destroying button using the tradional conditional statement
-    
+
     var body: some View {
-        Button("Hello World!"){
-            useRedText.toggle()
-        }
-        .foregroundStyle(useRedText ? .red : .blue)
+     // Environmental variable
+        // changing
         
+        VStack{
+            Text("First Text")
+                .font(.largeTitle)
+            Text("Middle Text")
+            Text("Last Text")
+        }
+        .font(.title)
     }
 }
 
