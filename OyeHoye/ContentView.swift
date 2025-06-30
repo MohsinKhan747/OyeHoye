@@ -8,18 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-
+    @State private var sleepAmount = 8.0
+    
     var body: some View {
-     // Environmental variable
-        // changing
-        
-        VStack{
-            Text("First Text")
-                .font(.largeTitle)
-            Text("Middle Text")
-            Text("Last Text")
-        }
-        .font(.title)
+        Stepper("\(sleepAmount) hourse", value: $sleepAmount)
+    
     }
 }
 
